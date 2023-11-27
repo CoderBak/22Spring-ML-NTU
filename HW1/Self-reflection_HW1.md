@@ -55,3 +55,7 @@ self.layers = nn.Sequential(
 ```
 
 将 8 改为 16， 使得训练中的 loss 有所降低，但最终预测反而变差，猜测是层的扩大使得机器学习了噪音，使得在训练时较优，预测时反而变差
+
+最终效果：在 seed 为 5201314 的情况下，最优的 private score 为 1.08394 ，达到了 strong baseline 1.14420
+
+更换 seed 后，即使神经网络结构没有改变，private score 也出现了显著差异
